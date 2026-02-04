@@ -41,11 +41,30 @@ export const Landing = (): JSX.Element => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-brand rounded-3xl p-12 md:p-20 text-center relative overflow-hidden"
+            className="bg-gradient-to-r from-brand to-teal-500 rounded-3xl p-12 md:p-20 text-center relative overflow-hidden"
           >
-            {/* Decorative elements */}
-            <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+            {/* Animated gradient orbs */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
+            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="absolute bottom-0 right-0 w-72 h-72 bg-teal-400/20 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"
+            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="absolute top-1/2 right-0 w-48 h-48 bg-white/10 rounded-full blur-3xl translate-x-1/2"
+            />
 
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -57,7 +76,7 @@ export const Landing = (): JSX.Element => {
               <Link to="/applications/new">
                 <Button
                   size="lg"
-                  className="bg-white text-brand hover:bg-gray-100 px-8 py-6 text-lg font-semibold cursor-pointer"
+                  className="bg-white text-brand hover:bg-gray-100 px-8 py-6 text-lg font-semibold cursor-pointer shadow-lg shadow-black/10"
                 >
                   Add Your First Application
                 </Button>
