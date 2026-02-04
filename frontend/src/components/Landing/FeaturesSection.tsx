@@ -1,5 +1,6 @@
 import type { JSX } from 'react';
 import { motion } from 'motion/react';
+import { ClipboardList, BarChart3, Sparkles } from 'lucide-react';
 
 interface Feature {
   title: string;
@@ -11,29 +12,17 @@ const features: Feature[] = [
   {
     title: 'Track Applications',
     description: 'Keep all your job applications organized in one place. Never lose track of where you applied.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-      </svg>
-    ),
+    icon: <ClipboardList className="w-6 h-6" />,
   },
   {
     title: 'Monitor Progress',
     description: 'See your application status at a glance. From applied to interview to offer.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-      </svg>
-    ),
+    icon: <BarChart3 className="w-6 h-6" />,
   },
   {
     title: 'Stay Organized',
     description: 'Add notes, links, and dates. Everything you need to ace your job search.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-      </svg>
-    ),
+    icon: <Sparkles className="w-6 h-6" />,
   },
 ];
 

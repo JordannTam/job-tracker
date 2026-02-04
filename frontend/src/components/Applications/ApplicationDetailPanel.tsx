@@ -2,6 +2,7 @@ import type { JSX } from 'react';
 import type { JobApplication } from '../../types';
 import { StatusBadge } from '../ui/StatusBadge';
 import { Button } from '@/components/ui/button';
+import { Loader2, ClipboardList, ExternalLink } from 'lucide-react';
 
 /**
  * Validates URL protocol to prevent XSS via javascript: URLs.
@@ -38,25 +39,7 @@ export const ApplicationDetailPanel = ({
     return (
       <div className="h-full flex items-center justify-center text-brand-body/50">
         <div className="text-center">
-          <svg
-            className="w-8 h-8 mx-auto mb-4 text-brand animate-spin"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <circle
-              className="opacity-25"
-              cx="12"
-              cy="12"
-              r="10"
-              stroke="currentColor"
-              strokeWidth="4"
-            />
-            <path
-              className="opacity-75"
-              fill="currentColor"
-              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-            />
-          </svg>
+          <Loader2 className="w-8 h-8 mx-auto mb-4 text-brand animate-spin" />
           <p className="text-sm">Loading application...</p>
         </div>
       </div>
@@ -67,19 +50,7 @@ export const ApplicationDetailPanel = ({
     return (
       <div className="h-full flex items-center justify-center text-brand-body/50">
         <div className="text-center">
-          <svg
-            className="w-16 h-16 mx-auto mb-4 text-brand/30"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-            />
-          </svg>
+          <ClipboardList className="w-16 h-16 mx-auto mb-4 text-brand/30" strokeWidth={1.5} />
           <p className="text-sm">Select an application to view details</p>
         </div>
       </div>
@@ -134,19 +105,7 @@ export const ApplicationDetailPanel = ({
               className="mt-1 inline-flex items-center gap-1.5 text-brand hover:text-brand-dark hover:underline"
             >
               <span>View Posting</span>
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
+              <ExternalLink className="w-4 h-4" />
             </a>
           </div>
         )}

@@ -113,6 +113,18 @@ text-brand-dark: #180D39
 text-brand-body: #1D1E20
 ```
 
+### Icons
+**Library:** Lucide React (`lucide-react`)
+- Always use Lucide icons instead of inline SVGs
+- Import icons individually: `import { Search, Loader2 } from 'lucide-react'`
+- Common icons used:
+  - `Search` - Search input
+  - `Loader2` - Loading spinner (with `animate-spin`)
+  - `ClipboardList` - Applications/tracking
+  - `BarChart3` - Progress/stats
+  - `Sparkles` - Organization/features
+  - `ExternalLink` - External links
+
 ### Status Badges (Functional Colors - Unchanged)
 | Status | Colors |
 |--------|--------|
