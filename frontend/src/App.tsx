@@ -6,23 +6,26 @@ import { ApplicationsPage } from './pages/ApplicationsPage';
 import { NewApplicationPage } from './pages/NewApplicationPage';
 import { EditApplicationPage } from './pages/EditApplicationPage';
 
-// Components (skeletons - will throw until implemented)
+// Components
 import { Landing } from './components/Landing/Landing';
 import { Dashboard } from './components/Dashboard/Dashboard';
+import { Navbar } from './components/ui/Navbar';
 
 function App() {
-
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/applications" element={<ApplicationsPage />} />
-        <Route path="/applications/new" element={<NewApplicationPage />} />
-        <Route path="/applications/:id/edit" element={<EditApplicationPage />} />
-      </Routes>
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Landing />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/applications" element={<ApplicationsPage />} />
+          <Route path="/applications/new" element={<NewApplicationPage />} />
+          <Route path="/applications/:id/edit" element={<EditApplicationPage />} />
+        </Routes>
+      </div>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App

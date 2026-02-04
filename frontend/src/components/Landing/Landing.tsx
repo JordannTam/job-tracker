@@ -24,27 +24,13 @@ const features = [
 /**
  * Landing page with hero, features, and CTA.
  * Uses Motion for animations.
+ * Navbar is rendered by App.tsx above this component.
  */
 export const Landing = (): JSX.Element => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Navigation */}
-      <nav className="container mx-auto px-6 py-6">
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex items-center justify-between"
-        >
-          <span className="text-xl font-bold text-gray-900">JobTracker</span>
-          <Link to="/applications">
-            <Button variant="ghost">Sign In</Button>
-          </Link>
-        </motion.div>
-      </nav>
-
+    <div>
       {/* Hero Section */}
-      <section className="container mx-auto px-6 pt-20 pb-32 text-center">
+      <section className="container mx-auto px-6 pt-16 pb-32 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
