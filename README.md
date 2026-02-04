@@ -1,4 +1,4 @@
-# JobPilot
+# JobFlow
 
 A full-stack serverless job application tracker built as a portfolio project. Navigate your career journey with a clean, organized dashboard.
 
@@ -94,7 +94,7 @@ Base URL: `https://j6tss5gko7.execute-api.ap-southeast-2.amazonaws.com/dev`
 
 ## Brand
 
-- **Name:** JobPilot
+- **Name:** JobFlow
 - **Primary Color:** Teal (#2A8E9E)
 - **Font:** Helvetica
 

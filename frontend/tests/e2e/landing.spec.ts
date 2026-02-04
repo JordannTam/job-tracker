@@ -7,7 +7,7 @@ test.describe('Landing Page', () => {
 
   test('should display the landing page with hero section', async ({ page }) => {
     // Verify page title/brand in navbar
-    await expect(page.getByRole('link', { name: 'JobPilot' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'JobFlow' })).toBeVisible();
 
     // Verify hero headline (now split across h1 and span)
     const heroHeading = page.locator('h1');

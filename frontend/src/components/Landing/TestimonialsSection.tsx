@@ -10,7 +10,7 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "JobPilot helped me stay organized during my job search. I landed my dream role at a FAANG company within 3 months!",
+    quote: "JobFlow helped me stay organized during my job search. I landed my dream role at a FAANG company within 3 months!",
     name: "Sarah M.",
     role: "Software Engineer",
     initials: "SM",

@@ -53,7 +53,7 @@ export const Navbar = (): JSX.Element => {
         >
           {/* Logo */}
           <Link to="/" className="text-xl font-bold text-brand-dark hover:text-brand transition-colors">
-            JobPilot
+            JobFlow
           </Link>
 
           {/* Navigation Links */}

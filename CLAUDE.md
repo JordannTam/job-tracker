@@ -81,7 +81,7 @@ Base URL: `https://j6tss5gko7.execute-api.ap-southeast-2.amazonaws.com/dev`
 ## Brand Guide
 
 ### Brand Name
-**JobPilot** - Navigate your career journey
+**JobFlow** - Navigate your career journey
 
 ### Typography
 **Font Family:** Helvetica (system font stack)
