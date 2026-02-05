@@ -91,6 +91,18 @@ npm install
 npm run deploy    # Build, zip, and deploy to Lambda
 ```
 
+### CI/CD Pipeline
+
+Automated deployment via GitHub Actions on push to `main`:
+
+1. Install dependencies
+2. Build frontend
+3. Run E2E tests (Playwright)
+4. Deploy to S3
+5. Invalidate CloudFront cache
+
+See `.github/workflows/deploy.yml`
+
 ## API Endpoints
 
 Base URL: `https://j6tss5gko7.execute-api.ap-southeast-2.amazonaws.com/dev`
@@ -117,6 +129,7 @@ Base URL: `https://j6tss5gko7.execute-api.ap-southeast-2.amazonaws.com/dev`
 - [x] Phase 1: Status filtering & search
 - [x] Phase 1: URL-based app selection
 - [x] Deployment: S3 + CloudFront hosting
+- [x] CI/CD: GitHub Actions (test + deploy on push)
 - [ ] Phase 2: Authentication (Cognito)
 - [ ] Phase 2: AI Resume Generator (Claude API)
 
