@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
  */
 export const HeroSection = (): JSX.Element => {
   return (
-    <section className="relative min-h-[80vh] flex items-center">
+    <section className="relative min-h-screen flex items-center justify-center">
       {/* Animated gradient background orbs */}
       <div className="absolute inset-0">
         <motion.div

@@ -5,17 +5,20 @@ import { Button } from '@/components/ui/button';
 import { HeroSection } from './HeroSection';
 import { FeaturesSection } from './FeaturesSection';
 import { TestimonialsSection } from './TestimonialsSection';
+import { LandingNavbar } from './LandingNavbar';
 
 /**
  * Landing page with hero, features, testimonials, and CTA.
  * Uses Motion for animations.
- * Navbar is rendered by App.tsx above this component.
+ * Has its own transparent navbar.
  */
 export const Landing = (): JSX.Element => {
   return (
     <div>
       {/* Top Section - Hero + Features with brand-light background */}
-      <div className="bg-brand-light overflow-hidden">
+      <div className="bg-brand-light overflow-hidden relative">
+        {/* Transparent Navbar */}
+        <LandingNavbar />
         {/* Hero Section */}
         <HeroSection />
 
